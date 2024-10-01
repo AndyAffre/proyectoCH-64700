@@ -1,0 +1,296 @@
+/* Encabezado */
+nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+    
+    }
+
+.logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+h1{
+    color: black;
+    font-size: 45px;
+    
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+/* FOOTER */
+
+/* FOOTER */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Añade algo de padding lateral */
+}
+
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 40px 0; /* Ajusta el padding */
+    position: relative; /* Relativo para anclarse correctamente */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+.footer-links {
+    flex: 1; /* Usar flex para que las secciones se distribuyan uniformemente */
+    min-width: 250px; /* Ancho mínimo para cada sección */
+    padding: 0 15px; /* Espaciado interno */
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px; /* Ajusta el margen */
+    font-weight: 500;
+    border-bottom: 2px solid white; /* Añade color a la línea */
+    padding-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none; /* Elimina estilos de lista */
+    padding: 0; /* Sin padding */
+}
+
+.footer-links ul li {
+    margin-bottom: 15px; /* Espaciado entre enlaces */
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white; /* Cambia el color del texto */
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: blueviolet; /* Cambia el color al pasar el ratón */
+    padding-left: 6px; /* Añade desplazamiento */
+}
+
+.social-link {
+    display: flex; /* Usa flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos */
+    margin-top: 10px; /* Margen superior */
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: blueviolet;
+    margin: 0 10px; /* Espaciado entre iconos */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.social-link a:hover {
+    background-color: #555; /* Cambia el color al pasar el ratón */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    .footer-links {
+        width: 100%; /* Cada sección ocupa el 100% */
+        max-width: none; /* Quita el límite de ancho */
+        margin-bottom: 20px; /* Margen entre secciones */
+    }
+}
+
+
+
+/* No se a que pagina corresponde-chekear*/
+
+.contimagen {
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+}
+
+
+/* Contenedor principal */
+.boton1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center; 
+}
+
+/* Estilo de la imagen */
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+
+.button-container {
+    display: flex; 
+    gap: 10px; 
+}
+
+/* Estilo de los botones */ 
+.btn {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    background-color: #007bff; 
+    color: white; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+.contimagen2 {
+    text-align: left;
+}
+
+.preguntas {
+    text-align: center;
+}
+
+
+/* PAG RESERVA */
+
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.item {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    max-width: 600px; /* Ancho máximo del contenedor de cada imagen */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center; /* Centra el texto y los botones */
+}
+
+.image {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Mantiene la proporción */
+}
+
+.button-container {
+    margin-top: 10px; /* Espaciado superior para los botones */
+}
+
+.btn {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: blue; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 5px; /* Margen entre botones */
+}
+
+.btn:hover {
+    background-color: darkblue; /* Cambio de color al pasar el ratón */
+}
+
+
+
+/* BOTONES de pags , ALINEACION Y ESTILOS */
+
+
+.contimagen, .bonton1 {
+    text-align: center; /* Centra los elementos dentro de cada contenedor */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.button-container {
+    margin-top: 10px; /* Espacio entre la imagen y los botones */
+    display: flex; /* Usar flexbox para alinear botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.btn {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: blue; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 5px; /* Margen entre botones */
+}
+
+.btn:hover {
+    background-color: darkblue; /* Cambio de color al pasar el ratón */
+}
+
+
+/* PAG CONTACTO */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+
+/* PAG PREGUNTAS FREC- PROXIMAMENTE */  
