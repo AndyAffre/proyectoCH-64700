@@ -18,60 +18,61 @@
     <body>
         <!--PRIMERA ESTRUCTURA = CABECERA/NAVEGACION-->
         <header>
+            <a href="#" class="logo">
+                <img src="../images/logo 1.jpeg" alt="logo de la marca">
+                <h2 class="nombre-marca">Deportes GO!</h2>
+            </a>
             <nav>
-                <div class="logo"> 
-                    <img src="../images/logo 1.jpeg" alt="">
-                </div>
-                <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../pages/reserva.html">RESERVA</a></li>
-                    <li><a href="../pages/contacto.html">CONTÁCTANOS</a></li>
-                    <li><a href="../pages/preguntas.html">PREGUNTAS FRENCUENTES</a></li>
-                    <li><a href="../pages/complejosad.html">COMPLEJOS ADHERIDOS</a></li>
-                </ul>
+                <a href="../index.html" class="nav-link">Iniciar Sesión</a>
+                <a href="../pages/nosotros.html" class="nav-link">Nosotros</a>
+                <a href="#" class="nav-link">Contáctanos</a>
+                <a href="../pages/complejosad.html" class="nav-link">Complejos Adheridos</a>
+                <a href="../pages/preguntas.html" class="nav-link">Preguntas Frecuentes</a>
             </nav>
-            
         </header>
 
-        <!--SEGUNDA ESTRUCTURA = CONTENIDO-->
-        <main>
-            <form>
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" name="nombre" placeholder="Ingrese su nombre"/>
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <label for="apellido/os">Apellido/s</label>
-                    <input id="apellido/s" name="apellido/s" placeholder="Ingrese su apellido/s"/>
-                </div>
-            <br><br>
-                <div class="form-group">
-                    <label for="correoelectroónico">Correo electrónico</label>
-                    <input id="correoelectroónico" name="correoelectroónico" placeholder="Ingrese su correo electrónico"/>
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <label for="telefóno">Teléfono</label>
-                    <input id="telefóno" name="telefóno" placeholder="Ingrese su teléfono"/>
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <label for="pais">País</label>
-                    <input id="pais" name="pais" placeholder="Seleccione su país"/>
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <label for="comentario">Comentario</label>
-                    <textarea cols="50" rows="10" name="comentario" id="comentario" placeholder="Ingrese comentario"></textarea>
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <input type="submit" value="Enviar"/>
-                </div>
-            </form>
-            
-        </main>
+            <!-- SEGUNDA ESTRUCTURA = CONTENIDO -->
+<main>
+    <form>
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" placeholder="Ingrese su nombre" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido/s</label>
+                <input id="apellido" name="apellido" placeholder="Ingrese su apellido/s" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="correoelectronico">Correo electrónico</label>
+                <input id="correoelectronico" name="correoelectronico" type="email" placeholder="Ingrese su correo electrónico" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" name="telefono" type="tel" placeholder="Ingrese su teléfono" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="pais">País</label>
+                <input id="pais" name="pais" placeholder="Seleccione su país" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" name="comentario" cols="50" rows="10" placeholder="Ingrese su comentario" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar"/>
+            </div>
+        </fieldset>
+    </form>
+</main>
 
         <!--TERCERAESTRUCTURA = PIE DE PAGINA-->
         <br><br><br><br><br>

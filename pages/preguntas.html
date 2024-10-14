@@ -10,7 +10,7 @@
         <title>Preguntas frecuentes</title>
         <style>
             body{
-                background-color: rgb(29, 156, 25);
+                background-color: rgb(69, 201, 168);
             }
         </style>
     </head>
@@ -18,34 +18,58 @@
     <body>
         <!--PRIMERA ESTRUCTURA = CABECERA/NAVEGACION-->
         <header>
+            <a href="#" class="logo">
+                <img src="../images/logo 1.jpeg" alt="logo de la marca">
+                <h2 class="nombre-marca">Deportes GO!</h2>
+            </a>
             <nav>
-                <div class="logo"> 
-                    <img src="../images/logo 1.jpeg" alt="">
-                </div>
-                <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../pages/reserva.html">RESERVA</a></li>
-                    <li><a href="../pages/contacto.html">CONTÁCTANOS</a></li>
-                    <li><a href="../pages/preguntas.html">PREGUNTAS FRENCUENTES</a></li>
-                    <li><a href="../pages/complejosad.html">COMPLEJOS ADHERIDOS</a></li>
-                </ul>
+                <a href="../index.html" class="nav-link">Iniciar Sesión</a>
+                <a href="../pages/nosotros.html" class="nav-link">Nosotros</a>
+                <a href="../pages/contacto.html" class="nav-link">Contáctanos</a>
+                <a href="../pages/complejosad.html" class="nav-link">Complejos Adheridos</a>
+                <a href="#" class="nav-link">Preguntas Frecuentes</a>
             </nav>
-            
         </header>
 
         <!--SEGUNDA ESTRUCTURA = CONTENIDO-->
-        <main>
-            <h1>Preguntas frecuentes</h1>
-            <div class="preguntas">
+    <h1>Preguntas Frecuentes</h1>
 
-            <p>¿Pregunta?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, minus.</p>
-            <p>¿Pregunta?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, quidem!</p>
-            <p>¿Pregunta?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, quidem!</p>
+    <section class="faq">
+        <div class="faq-item">
+            <h2 class="faq-question">¿Cómo puedo registrarme?</h2>
+            <p class="faq-answer">Para registrarte, simplemente haz clic en el botón de "Registrarse" en la parte superior de la página y completa el formulario con tu información.</p>
         </div>
-        </main>
+
+        <div class="faq-item">
+            <h2 class="faq-question">¿Cómo restablezco mi contraseña?</h2>
+            <p class="faq-answer">Si has olvidado tu contraseña, puedes restablecerla haciendo clic en "¿Olvidaste tu contraseña?" en la página de inicio de sesión y siguiendo las instrucciones.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="faq-question">¿Puedo cambiar mi dirección de correo electrónico?</h2>
+            <p class="faq-answer">Sí, puedes cambiar tu dirección de correo electrónico en la configuración de tu perfil, accediendo a "Mi cuenta" y luego editando tus datos personales.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="faq-question">¿Cómo contacto con soporte?</h2>
+            <p class="faq-answer">Puedes contactar con soporte enviando un correo a soporte@ejemplo.com o utilizando el formulario de contacto en la sección de "Contáctanos".</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="faq-question">¿Ofrecen envío internacional?</h2>
+            <p class="faq-answer">Sí, ofrecemos envío internacional a varios países. Para obtener más información, consulta la página de "Envíos y devoluciones".</p>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('open');
+            });
+        });
+    </script>
+    
+</main>
 
         <!--TERCERAESTRUCTURA = PIE DE PAGINA-->
         <br><br><br><br><br>
