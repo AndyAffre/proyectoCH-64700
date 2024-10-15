@@ -1,3 +1,12 @@
+/* Estilo de la imagen */
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+
+
 /* ENCABEZADO */
 
 body{
@@ -50,6 +59,7 @@ header{
 }
 
 
+
 /* FOOTER */
 
 /* FOOTER */
@@ -68,7 +78,7 @@ html, body {
 .footer {
     background-color: #333; /* Color de fondo */
     color: white; /* Color del texto */
-    padding: 40px 0; /* Ajusta el padding */
+    padding: 20px 0; /* Reducido el padding superior e inferior */
     position: relative; /* Relativo para anclarse correctamente */
     bottom: 0;
     width: 100%;
@@ -82,17 +92,17 @@ html, body {
 
 .footer-links {
     flex: 1; /* Usar flex para que las secciones se distribuyan uniformemente */
-    min-width: 250px; /* Ancho mínimo para cada sección */
-    padding: 0 15px; /* Espaciado interno */
+    min-width: 200px; /* Reducido el ancho mínimo para cada sección */
+    padding: 0 10px; /* Reducido el padding interno */
 }
 
 .footer-links h4 {
-    font-size: 20px;
+    font-size: 18px; /* Reducido el tamaño de los encabezados */
     color: white;
-    margin-bottom: 15px; /* Ajusta el margen */
+    margin-bottom: 10px; /* Reducido el margen inferior */
     font-weight: 500;
     border-bottom: 2px solid white; /* Añade color a la línea */
-    padding-bottom: 10px;
+    padding-bottom: 8px; /* Reducido el padding inferior */
     text-align: center;
 }
 
@@ -102,11 +112,11 @@ html, body {
 }
 
 .footer-links ul li {
-    margin-bottom: 15px; /* Espaciado entre enlaces */
+    margin-bottom: 10px; /* Reducido el espaciado entre enlaces */
 }
 
 .footer-links ul li a {
-    font-size: 18px;
+    font-size: 16px; /* Reducido el tamaño de la fuente de los enlaces */
     text-decoration: none;
     color: white; /* Cambia el color del texto */
     display: block;
@@ -115,7 +125,7 @@ html, body {
 
 .footer-links ul li a:hover {
     color: blueviolet; /* Cambia el color al pasar el ratón */
-    padding-left: 6px; /* Añade desplazamiento */
+    padding-left: 4px; /* Reducido el desplazamiento en hover */
 }
 
 .social-link {
@@ -126,12 +136,12 @@ html, body {
 
 .social-link a {
     display: inline-block;
-    min-height: 40px;
-    width: 40px;
+    min-height: 30px; /* Reducido el tamaño de los iconos */
+    width: 30px; /* Reducido el tamaño de los iconos */
     background-color: blueviolet;
-    margin: 0 10px; /* Espaciado entre iconos */
+    margin: 0 8px; /* Reducido el espaciado entre iconos */
     text-align: center;
-    line-height: 40px;
+    line-height: 30px;
     border-radius: 50%;
     color: white;
     transition: all 0.5s ease;
@@ -152,143 +162,227 @@ html, body {
     .footer-links {
         width: 100%; /* Cada sección ocupa el 100% */
         max-width: none; /* Quita el límite de ancho */
-        margin-bottom: 20px; /* Margen entre secciones */
+        margin-bottom: 10px; /* Reducido el margen entre secciones */
+    }
+
+    .footer-links h4 {
+        font-size: 16px; /* Reducido el tamaño del encabezado en pantallas pequeñas */
+    }
+
+    .footer-links ul li a {
+        font-size: 14px; /* Reducido el tamaño de los enlaces en pantallas pequeñas */
     }
 }
 
+
 /* Probando git */ 
 
-/* No se a que pagina corresponde-chekear*/
 
-.contimagen {
+/* PAG INICIO */
+
+
+/* Fondo de la página */
+
+body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/garnacho.jpeg'); /* Cambia 'images/fondo.jpg' por la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+        font-family: Arial, sans-serif; /* Configuración de la fuente */
+    }
+
+
+/* Estilos del contenedor de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Centra el formulario en la página */
     text-align: center;
+    position: relative; /* Asegura que el contenedor esté posicionado bien */
+    z-index: 1; /* Asegura que esté por encima del fondo de la página */
 }
 
-img {
-    display: inline-block;
+/* Estilos del título */
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-
-/* Contenedor principal */
-.boton1 {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
-    text-align: center; 
-}
-
-/* Estilo de la imagen */
-img {
-    max-width: 100%; 
-    height: auto; 
-    margin-bottom: 20px; 
-}
-
-
-.button-container {
-    display: flex; 
-    gap: 10px; 
-}
-
-/* Estilo de los botones */ 
-.btn {
-    padding: 10px 20px; 
-    font-size: 16px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    background-color: #007bff; 
-    color: white; 
-    transition: background-color 0.3s ease; 
-}
-
-.btn:hover {
-    background-color: #0056b3; 
-}
-
-.contimagen2 {
+/* Estilos de los campos de input */
+.input-group {
+    margin-bottom: 15px;
     text-align: left;
 }
 
-.preguntas {
-    text-align: center;
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #5b9bd5;
+    outline: none;
+}
+
+/* Estilos del botón de login */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3ebd5b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #218838;
+}
+
+/* Estilos del texto de los links */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
 }
 
 
-/* PAG RESERVA */
 
 
-.container {
-    display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna */
-    align-items: center; /* Centra los elementos horizontalmente */
+
+/*PAG NOSOTROS */
+
+
+/* PAG NOSOTROS */
+
+/* Contenedor principal de la página */
+.sobre-nosotros {
+    text-align: center; /* Centra todo el contenido dentro del contenedor */
+    padding: 50px 20px; /* Espaciado alrededor del contenedor */
 }
 
-.item {
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    max-width: 600px; /* Ancho máximo del contenedor de cada imagen */
-    margin-bottom: 20px; /* Espaciado inferior */
-    text-align: center; /* Centra el texto y los botones */
+/* Estilo para el título principal */
+.sobre-nosotros h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 30px; /* Espaciado inferior */
 }
 
-.image {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    height: 200px; /* Altura fija */
-    object-fit: cover; /* Mantiene la proporción */
+/* Contenedor que agrupa la imagen y el texto */
+.sobre-nosotros .contenido {
+    display: flex; /* Utiliza flexbox para disposición horizontal */
+    justify-content: center; /* Centra los elementos en el eje horizontal */
+    align-items: flex-start; /* Alinea los elementos al inicio en el eje vertical */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenedor */
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas pequeñas */
 }
 
-.button-container {
-    margin-top: 10px; /* Espaciado superior para los botones */
+/* Estilo para el label (el texto) */
+.sobre-nosotros .contenido .titulo {
+    font-size: 1.1em; /* Cambia el tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más audaz */
+    color: #555; /* Color del texto */
+    max-width: 600px; /* Evita que el texto se expanda demasiado */
 }
 
-.btn {
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: blue; /* Color de fondo */
-    color: white; /* Color de texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    margin: 5px; /* Margen entre botones */
+/* Estilo para la imagen */
+.sobre-nosotros .contenido .imagen {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
 }
 
-.btn:hover {
-    background-color: darkblue; /* Cambio de color al pasar el ratón */
+/* Estilo para la sección de plataformas */
+.sobre-nosotros .plataformas {
+    display: block; /* Asegura que se muestre en bloque */
+    margin-top: 20px; /* Espacio arriba del texto de plataformas */
+    font-size: 1.1em; /* Tamaño del texto para plataformas */
+    color: #555; /* Color del texto */
 }
 
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sobre-nosotros .contenido {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
 
+    .sobre-nosotros .contenido .imagen {
+        width: 80%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+        max-width: 350px; /* Ancho máximo de la imagen */
+    }
 
-/* BOTONES de pags , ALINEACION Y ESTILOS */
-
-
-.contimagen, .bonton1 {
-    text-align: center; /* Centra los elementos dentro de cada contenedor */
-    margin-bottom: 20px; /* Espaciado inferior */
+    .sobre-nosotros .contenido .titulo {
+        font-size: 1.2em; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
 }
 
-.button-container {
-    margin-top: 10px; /* Espacio entre la imagen y los botones */
-    display: flex; /* Usar flexbox para alinear botones */
-    justify-content: center; /* Centra los botones horizontalmente */
-}
-
-.btn {
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: blue; /* Color de fondo */
-    color: white; /* Color de texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    margin: 5px; /* Margen entre botones */
-}
-
-.btn:hover {
-    background-color: darkblue; /* Cambio de color al pasar el ratón */
-}
 
 
 /* PAG CONTACTO */
+
 
 /* Diseño general */
 body {
@@ -319,13 +413,20 @@ fieldset {
 }
 
 legend {
-    font-size: 1.6em;
-    margin-bottom: 20px;
+    font-size: 2.6em;
+    margin-bottom: 5%;
     color: #333;
+    text-align: center;
 }
 
 .form-group {
     margin-bottom: 20px;
+}
+
+.contactosub{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
 }
 
 label {
@@ -398,7 +499,8 @@ input[required]:focus, textarea[required]:focus {
 
 
 
-/* PAG PREGUNTAS FREC- PROXIMAMENTE */  
+
+/* PAG PREGUNTAS FREC- */  
 
 /* Diseño general */
 body {
@@ -420,9 +522,11 @@ main {
 /* Título principal */
 h1 {
     font-size: 2em;
-    color: #333;
+    color: white;
     text-align: center;
     margin-bottom: 40px;
+    font-style: italic;
+    font-weight: 2500;
 }
 
 /* Contenedor de preguntas frecuentes */
@@ -506,4 +610,55 @@ h1 {
     .faq-question {
         font-size: 1em;
     }
+}
+
+
+
+/* PAG COMPLEJOS ADHERIDOS */ 
+
+/* PAG COMPLEJOS ADHERIDOS */ 
+
+/* Contenedor principal */
+.boton1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  /* Centra los botones horizontalmente */
+    justify-content: center;  /* Centra los botones verticalmente */
+    height: 100vh;  /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+    background-color: #f8f9fa;  /* Fondo claro para el contenedor */
+    padding: 20px;  /* Espaciado interno */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: flex;
+    gap: 15px;  /* Espacio entre botones */
+    justify-content: center;  /* Asegura que los botones estén centrados */
+    align-items: center;  /* Centra los botones verticalmente */
+    margin-top: 20px; /* Espacio superior para separar los botones del contenido anterior */
+}
+
+/* Estilo de los botones */
+.btn {
+    padding: 12px 24px;  /* Mayor espaciado en los botones */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s;  /* Añadir efecto de transform al hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave en los botones */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);  /* Efecto de elevación al pasar el ratón */
+}
+
+.lorem1 {
+    font-weight: bold;
 }
