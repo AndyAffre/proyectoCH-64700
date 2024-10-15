@@ -1,0 +1,50 @@
+/* ENCABEZADO */
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(123, 204, 98);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 75px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+.nav-link{
+    font-weight: 700;
+    padding-right: 10px;
+    
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}

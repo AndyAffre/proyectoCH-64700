@@ -1,0 +1,48 @@
+/* PAG COMPLEJOS ADHERIDOS */ 
+
+/* PAG COMPLEJOS ADHERIDOS */ 
+
+/* Contenedor principal */
+.boton1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  /* Centra los botones horizontalmente */
+    justify-content: center;  /* Centra los botones verticalmente */
+    height: 100vh;  /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+    background-color: #f8f9fa;  /* Fondo claro para el contenedor */
+    padding: 20px;  /* Espaciado interno */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: flex;
+    gap: 15px;  /* Espacio entre botones */
+    justify-content: center;  /* Asegura que los botones estén centrados */
+    align-items: center;  /* Centra los botones verticalmente */
+    margin-top: 20px; /* Espacio superior para separar los botones del contenido anterior */
+}
+
+/* Estilo de los botones */
+.btn {
+    padding: 12px 24px;  /* Mayor espaciado en los botones */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s;  /* Añadir efecto de transform al hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave en los botones */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);  /* Efecto de elevación al pasar el ratón */
+}
+
+.lorem1 {
+    font-weight: bold;
+}

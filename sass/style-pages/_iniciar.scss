@@ -1,0 +1,126 @@
+/* PAG INICIO */
+
+
+/* Fondo de la página */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/garnacho.jpeg'); /* Cambia 'images/fondo.jpg' por la ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+    font-family: Arial, sans-serif; /* Configuración de la fuente */
+}
+
+
+/* Estilos del contenedor de login */
+.login-container {
+background-color: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+width: 100%;
+max-width: 400px;
+margin: 0 auto; /* Centra el formulario en la página */
+text-align: center;
+position: relative; /* Asegura que el contenedor esté posicionado bien */
+z-index: 1; /* Asegura que esté por encima del fondo de la página */
+}
+
+/* Estilos del título */
+.login-container h2 {
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+}
+
+/* Estilos de los campos de input */
+.input-group {
+margin-bottom: 15px;
+text-align: left;
+}
+
+.input-group label {
+display: block;
+margin-bottom: 5px;
+font-size: 16px;
+color: #555;
+}
+
+.input-group input {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+box-sizing: border-box;
+transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+border-color: #5b9bd5;
+outline: none;
+}
+
+/* Estilos del botón de login */
+.login-btn {
+width: 100%;
+padding: 12px;
+background-color: #3ebd5b;
+color: white;
+border: none;
+border-radius: 4px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+background-color: #218838;
+}
+
+/* Estilos del texto de los links */
+p {
+margin-top: 20px;
+font-size: 14px;
+color: #555;
+}
+
+p a {
+color: #007bff;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+p a:hover {
+color: #0056b3;
+text-decoration: underline;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+.login-container {
+    padding: 20px;
+}
+
+.login-container h2 {
+    font-size: 20px;
+}
+
+.input-group input {
+    font-size: 14px;
+}
+
+.login-btn {
+    padding: 10px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
+}
+}

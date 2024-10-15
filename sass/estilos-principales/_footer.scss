@@ -1,0 +1,113 @@
+/* FOOTER */
+
+/* FOOTER */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Añade algo de padding lateral */
+}
+
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Reducido el padding superior e inferior */
+    position: relative; /* Relativo para anclarse correctamente */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+.footer-links {
+    flex: 1; /* Usar flex para que las secciones se distribuyan uniformemente */
+    min-width: 200px; /* Reducido el ancho mínimo para cada sección */
+    padding: 0 10px; /* Reducido el padding interno */
+}
+
+.footer-links h4 {
+    font-size: 18px; /* Reducido el tamaño de los encabezados */
+    color: white;
+    margin-bottom: 10px; /* Reducido el margen inferior */
+    font-weight: 500;
+    border-bottom: 2px solid white; /* Añade color a la línea */
+    padding-bottom: 8px; /* Reducido el padding inferior */
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none; /* Elimina estilos de lista */
+    padding: 0; /* Sin padding */
+}
+
+.footer-links ul li {
+    margin-bottom: 10px; /* Reducido el espaciado entre enlaces */
+}
+
+.footer-links ul li a {
+    font-size: 16px; /* Reducido el tamaño de la fuente de los enlaces */
+    text-decoration: none;
+    color: white; /* Cambia el color del texto */
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: blueviolet; /* Cambia el color al pasar el ratón */
+    padding-left: 4px; /* Reducido el desplazamiento en hover */
+}
+
+.social-link {
+    display: flex; /* Usa flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos */
+    margin-top: 10px; /* Margen superior */
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 30px; /* Reducido el tamaño de los iconos */
+    width: 30px; /* Reducido el tamaño de los iconos */
+    background-color: blueviolet;
+    margin: 0 8px; /* Reducido el espaciado entre iconos */
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.social-link a:hover {
+    background-color: #555; /* Cambia el color al pasar el ratón */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    .footer-links {
+        width: 100%; /* Cada sección ocupa el 100% */
+        max-width: none; /* Quita el límite de ancho */
+        margin-bottom: 10px; /* Reducido el margen entre secciones */
+    }
+
+    .footer-links h4 {
+        font-size: 16px; /* Reducido el tamaño del encabezado en pantallas pequeñas */
+    }
+
+    .footer-links ul li a {
+        font-size: 14px; /* Reducido el tamaño de los enlaces en pantallas pequeñas */
+    }
+}
